@@ -1,0 +1,7 @@
+.hello {
+    color: black;
+}
+
+@tailwind base;
+@tawilind components;
+@tailwind utilities;

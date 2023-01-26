@@ -38,7 +38,7 @@
         <img class="h-[500px] w-full mx-auto object-cover object-center" src="img/instructor.jpg" alt="">
       </div>
       <!-- Focus, ring, active, translation and transition to button -->
-      <div class="flex justify-center w-full rounded-md p-4">
+      <div class="flex justify-center w-full rounded-md p-4 space-x-3">
     
         <button class="
           inline-block 
@@ -59,6 +59,14 @@
     
         <button class="btn">
           btn component
+        </button>
+
+        <button class="btn bg-brand-light text-brand-dark">
+          Config Extended brand-something colors
+        </button>
+
+        <button class="btn bg-brand">
+          Config default brand color
         </button>
     
       </div>

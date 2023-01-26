@@ -6,7 +6,15 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          light: "#6461A0",
+          DEFAULT: "#9062A1",
+          dark: "#1E1B1F",
+        }
+      }
+    },
   },
   plugins: [],
 }

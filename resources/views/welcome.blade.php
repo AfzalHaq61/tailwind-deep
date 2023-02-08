@@ -21,7 +21,7 @@
       </div>
       <!-- max-w-sm and mx-auto(it will apply to the dev which you want to center) -->
       <div class="w-screen">
-        <div class="bg-green-200 p-10 rounded-md max-w-screen-sm mx-auto">
+        <div class="bg-green-500 p-10 rounded-md max-w-screen-sm mx-auto">
           <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quam voluptate neque aspernatur dolor
             aperiam est consequuntur ut odit vero! Dignissimos exercitationem facilis quis, illo quos eos repellendus ea
             ullam?</h1>
@@ -69,6 +69,37 @@
           Config default brand color
         </button>
     
+      </div>
+      <hr class="my-5">
+      {{-- translate --}}
+      <div class="flex justify-center bg-gray-200 p-20 my-5 space-x-10">
+        {{-- translate-x-5 && translate-y-5 --}}
+        <div class="relative bg-green-500 rounded-md shadow-md w-[200px] h-[200px]">
+          <div class="absolute transform translate-x-5 translate-y-5">
+            <div class="bg-white rounded-md shadow-md w-[150px] h-[150px]">translate-x-5 && translate-y-5</div>
+          </div>
+        </div>
+
+        {{-- translate-x-5 && translate-y-5 --}}
+        <div class="relative bg-green-500 rounded-md shadow-md w-[200px] h-[200px]">
+          <div class="absolute transform -translate-x-5 -translate-y-5">
+            <div class="bg-white rounded-md shadow-md w-[150px] h-[150px]">translate-x-5 && translate-y-5</div>
+          </div>
+        </div>
+
+        {{-- inset-0 --}}
+        <div class="relative bg-green-500 rounded-md shadow-md w-[200px] h-[200px]">
+          <div class="absolute inset-0">
+            <div class="bg-white rounded-md shadow-md w-full h-full">inset-0</div>
+          </div>
+        </div>
+
+        {{-- inset-[----] --}}
+        <div class="relative bg-green-500 rounded-md shadow-md w-[200px] h-[200px]">
+          <div class="absolute inset-8">
+            <div class="bg-white rounded-md shadow-md w-full h-full">inset-[----]</div>
+          </div>
+        </div>
       </div>
 </body>
 

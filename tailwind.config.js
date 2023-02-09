@@ -13,8 +13,17 @@ module.exports = {
           DEFAULT: "#9062A1",
           dark: "#1E1B1F",
         }
-      }
+      },
+      lineClamp: {
+        10: "10",
+        12: "12",
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      lineClamp: ["hover"],
+    }
+  },
+  plugins: [require("@tailwindcss/line-clamp")],
 }

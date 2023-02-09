@@ -116,7 +116,8 @@
     <div class="bg-gray-200 rounded-md p-16 mx-96 mb-20">
         <h1 class="font-bold mb-5">line-clamp truncate the p how much line you want otherwise truncate only do to 1 line
         </h1>
-        <p class="line-clamp-2 hover:line-clamp-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eius at itaque
+        <p class="line-clamp-2 hover:line-clamp-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eius
+            at itaque
             voluptatibus ab aperiam, ut inventore iste ipsam fuga consectetur molestiae ipsa veritatis aspernatur vel
             tempora ducimus possimus hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nisi
             repellendus, reprehenderit nihil fugiat maiores quaerat dignissimos, deleniti omnis quas laudantium nesciunt
@@ -125,6 +126,44 @@
             ab eligendi, pariatur debitis sapiente, ipsum quas commodi. Pariatur, soluta. Lorem ipsum, dolor sit amet
             consectetur adipisicing elit. Molestias laudantium, cum id praesentium reprehenderit quaerat laboriosam
             iusto officia quo eveniet. Sit maiores beatae dolore alias fugiat dolores deserunt ullam molestias.</p>
+    </div>
+
+    <hr class="my-5">
+
+    {{-- Filter & BackDrop Filter --}}
+
+    <div class="flex justify-center mb-5">
+        <h1>Filter & BackDrop Filter</h1>
+    </div>
+
+    {{-- drop shadow --}}
+
+    <div class="space-y-8 mb-5 px-20">
+        {{-- it will directly add to the corners --}}
+        <img class="shadow-xl rounded-lg" src="/images/logo.png" alt="">
+        <h1>it will directly add to the corners</h1>
+        {{-- like shadow bg will add to the corners --}}
+        <img class="shadow-xl rounded-lg bg-red-100" src="/images/logo.png" alt="">
+        <h1>like shadow bg will add to the corners</h1>
+        {{-- it will add to the edges like you can see on on edges --}}
+        <img class="filter transition duration-300 hover:drop-shadow-lg" src="/images/logo.png" alt="">
+        <h1>it will add to the edges like you can see on on edges</h1>
+    </div>
+
+    {{-- backdrop filter --}}
+    <div class="mx-16 mt-8 h-96 relative">
+        <div class="absolute w-full py-8">
+            <img class="w-[600px] h-40 object-cover object-center rounded-2xl" src="/images/profile.jpg" alt="">
+        </div>
+        <div class="relative h-60 flex overflow-x-auto space-x-[40px]">
+            <div class="flex-shrink-0 rounded-2xl w-full "></div>
+            <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-blur-lg"></div>
+            <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-hue-rotate-180"></div>
+            <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-grayscale"></div>
+            <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-saturate-200"></div>
+            <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-invert"></div>
+            <div class="flex-shrink-0 rounded-2xl w-full"></div>
+        </div>
     </div>
 </body>
 
